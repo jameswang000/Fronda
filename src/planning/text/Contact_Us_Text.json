@@ -1,0 +1,14 @@
+{
+  "contact_us": {
+    "email": {
+      "header": "Stay Rooted with Us",
+      "paragraph": "Sign up for Fronda’s newsletter to receive exclusive plant tips, early access to new arrivals, and special offers straight to your inbox. Let’s grow together!",
+      "disclaimer": "By submitting this form, you agree to receive automated promotional and personalized marketing emails (e.g., product updates) from Fronda at the email address provided. Consent is not required for purchase. You may unsubscribe anytime."
+    },
+    "text": {
+      "header": "Let’s Chat (Plants)!",
+      "paragraph": "Get plant care tips, exclusive updates, and surprise offers sent straight to your phone. Stay connected with all things Fronda!",
+      "disclaimer": "By submitting this form, you agree to receive automated promotional and personalized marketing text messages (e.g., special offers) from Fronda at the phone number provided. Consent is not a condition of any purchase. Reply HELP for assistance and STOP to opt-out. Message frequency may vary. Msg & data rates may apply. View Terms & Privacy."
+    }
+  }
+}

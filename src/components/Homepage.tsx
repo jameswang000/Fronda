@@ -9,7 +9,7 @@ import Footer from "./Footer.tsx";
 
 const Homepage = () => {
   return (
-    <>
+    <div className="min-w-full flex flex-col items-center bg-frondaSageGreen font-primary">
       <NavBar />
       <Hero />
       <FeaturedOfferings />
@@ -18,7 +18,7 @@ const Homepage = () => {
       <Reviews />
       <ContactForms />
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,55 @@
+{
+  "title": "Fronda",
+  "hero": {
+    "header": "Nature's Artistry, Cultivated for Your Home",
+    "paragraph": "Fronda marries nature and art—each potted plant is a living masterpiece that transforms your space into a vibrant gallery of natural beauty."
+  },
+  "offerings": {
+    "header": "In-season",
+    "paragraph": "Explore our in-season selection—fresh, vibrant plants at their peak, ready to brighten your home."
+  },
+  "about_us": {
+    "header": "About Us",
+    "paragraph1": "Fronda's journey began with Elena, a woman whose past was as wild and unpredictable as the plants she now nurtures. Once a mercenary, Elena roamed across war-torn landscapes, navigating danger and uncertainty.",
+    "paragraph2": "In the midst of conflict, it was the resilience of nature—an unexpected sprout through cracked pavement or a flower blossoming in the most unlikely places—that gave her peace. After years of service, Elena left the battlefield behind, seeking solace in the quiet strength of plants.",
+    "paragraph3": "What started as a personal escape from her chaotic life grew into a deep passion, and Fronda was born—a place where every plant tells a story of survival, beauty, and transformation. Through Fronda, Elena brings you a piece of that same peace and resilience, offering plants that don't just fill your home—they tell stories of hope and renewal."
+  },
+  "why_us": [
+    {
+      "header": "Nature's Healing Touch",
+      "paragraph": "Fronda's plants do more than decorate, they improve your well-being."
+    },
+    {
+      "header": "Planting with Purpose",
+      "paragraph": "We don't just sell plants; we cultivate relationships. Our plants are hand-selected from small, sustainable farms that share our commitment to quality."
+    },
+    {
+      "header": "Curated for Your Space",
+      "paragraph": "Fronda's plants thrive in any home. Whether it's a serene, low-maintenance succulent or a striking statement piece, our collection fits seamlessly into your life, no matter the size or style of your space."
+    }
+  ],
+  "reviews": {
+    "header": "What Our Customers Are Saying",
+    "paragraph": "Our plants do more than brighten your space—they create lasting impressions. See how Fronda's greenery has transformed homes, lifted spirits, and become a part of our customers' everyday lives. Let their stories inspire your next plant addition.",
+    "reviewsList": [
+      {
+        "name": "Elise W.",
+        "quote": "A gift with meaning",
+        "content": "Got the Celestial Whisper for a friend going through a tough time. She loved the story behind it and told me it made her feel more grounded. It's more than a plant—it's a little piece of peace.",
+        "numStars": 5
+      },
+      {
+        "name": "Jason R.",
+        "quote": "Beautiful, resilient, and thriving",
+        "content": "I've never had much of a green thumb, but my Green Cascade is still going strong after two months. Fronda’s care guide was super easy to follow, and I swear my living room feels fresher and calmer. Will definitely be ordering again!",
+        "numStars": 5
+      },
+      {
+        "name": "Maya L.",
+        "quote": "Exactly what my space needed",
+        "content": "I ordered a Tranquil Veil and it completely changed the vibe of my apartment. The plant arrived healthy, beautifully packaged, and even came with a little note about its care. It feels like Fronda puts real love into what they do.",
+        "numStars": 5
+      }
+    ]
+  }
+}
