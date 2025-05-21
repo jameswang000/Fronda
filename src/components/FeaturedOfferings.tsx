@@ -6,7 +6,7 @@ const FeaturedOfferings = () => {
   return (
     <div
       className="flex flex-col items-center bg-frondaBiege w-full max-w-[2000px]"
-      style={{ paddingTop: "max(5%, 40px)", paddingBottom: "max(5%, 20px)" }}
+      style={{ paddingTop: "40px", paddingBottom: "20px" }}
     >
       <h2 className="font-semibold text-5xl">Seasonal Varieties</h2>
       <p className="font-normal text-2xl mt-5">
