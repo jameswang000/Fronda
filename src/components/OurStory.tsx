@@ -7,7 +7,7 @@ const OurStory = () => {
       className="bg-top bg-cover w-full max-w-[2000px]"
       style={{ backgroundImage: `url(${ourStoryImage})` }}
     >
-      <div className="bg-gradient-to-b from-frondaBiege to-frondaBiege/0 w-full flex flex-col items-center py-28">
+      <div className="bg-gradient-to-b from-frondaBiege to-frondaBiege/0 w-full flex flex-col items-center pt-10 pb-28">
         <div className="flex flex-col items-center w-4/7">
           <h2 className="text-5xl font-semibold">Our Story</h2>
           <div className="text-3xl font-normal mt-9">

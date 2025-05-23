@@ -1,4 +1,5 @@
 import heroBackground from "../images/Hero-Image.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -19,9 +20,16 @@ const Hero = () => {
             masterpiece that transforms your space into a vibrant gallery of
             natural beauty.
           </p>
-          <button className="text-3xl mt-12 py-4 px-14 text-frondaDarkGreen font-bold bg-frondaSageGreen rounded-lg">
+          <Link
+            to="/shopping"
+            className="text-3xl mt-12 py-4 px-14 text-frondaDarkGreen font-bold bg-frondaSageGreen rounded-lg
+                       hover:opacity-80 hover:cursor-pointer shadow-md
+                       transition-all duration-150
+                       focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-frondaDarkGreen
+                       active:scale-95 active:translate-y-[1px] active:shadow-inner"
+          >
             Shop Now
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -21,7 +21,14 @@ const EmailForm = () => {
         />
         <button
           type="submit"
-          className="bg-frondaDarkGreen py-2 px-7 rounded-md text-white"
+          onClick={(e) => {
+            e.preventDefault();
+          }}
+          className="bg-frondaDarkGreen py-2 px-7 rounded-md text-white
+                     hover:opacity-80 hover:cursor-pointer shadow-md
+                     transition-all duration-150
+                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-frondaDarkGreen
+                     active:scale-95 active:translate-y-[1px] active:shadow-inner"
         >
           Submit
         </button>

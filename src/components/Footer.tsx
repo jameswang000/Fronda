@@ -1,4 +1,5 @@
 import logo from "../images/Fronda-Logo-Dark.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,27 +19,27 @@ const Footer = () => {
           <div className="flex flex-col flex-1 gap-5">
             <h3 className="text-xl font-semibold">My Account</h3>
             <div className="flex flex-col gap-2.5 text-base font-normal whitespace-nowrap">
-              <a href="">My Account</a>
-              <a href="">Check Order Status</a>
+              <Link to="/account">My Account</Link>
+              <Link to="/account/orderStatus">Check Order Status</Link>
             </div>
           </div>
           <div className="flex flex-col flex-1 gap-5">
             <h3 className="text-xl font-semibold">Help</h3>
             <div className="flex flex-col gap-2.5 text-base font-normal whitespace-nowrap">
-              <a href="">Help Center</a>
-              <a href="">Plant Care</a>
-              <a href="">Contact Us</a>
-              <a href="">Refunds and Redelivery Policy</a>
+              <Link to="/helpCenter">Help Center</Link>
+              <Link to="/plantCare">Plant Care</Link>
+              <Link to="/contactUs">Contact Us</Link>
+              <Link to="/refunds">Refunds and Redelivery Policy</Link>
             </div>
           </div>
           <div className="flex flex-col flex-1 gap-5">
             <h3 className="text-xl font-semibold">About Fronda</h3>
             <div className="flex flex-col gap-2.5 text-base font-normal whitespace-nowrap">
-              <a href="">The Fronda Difference</a>
-              <a href="">Blog</a>
-              <a href="">In the News</a>
-              <a href="">Corporate Gifts</a>
-              <a href="">Careers</a>
+              <Link to="/about">The Fronda Difference</Link>
+              <Link to="/about/blog">Blog</Link>
+              <Link to="/about/news">In the News</Link>
+              <Link to="/about/charity">Corporate Gifts</Link>
+              <Link to="/about/careers">Careers</Link>
             </div>
           </div>
         </div>
@@ -47,9 +48,11 @@ const Footer = () => {
       <div className="flex flex-row gap-3.5 justify-end font-normal text-sm px-[10%] whitespace-nowrap flex-wrap">
         <p>Copyright &copy; 2025 Fronda, Inc.</p>
         <p>{"(267)-274-8805"}</p>
-        <a href="">Privacy Policy</a>
-        <a href="">Terms and Conditions</a>
-        <a href="">Accessibility Statement</a>
+        <Link to="/documents/privacyPolicy">Privacy Policy</Link>
+        <Link to="/documents/termsAndConditions">Terms and Conditions</Link>
+        <Link to="/documents/accessibilityStatement">
+          Accessibility Statement
+        </Link>
       </div>
     </div>
   );
