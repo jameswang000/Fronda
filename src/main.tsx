@@ -6,6 +6,8 @@ import Homepage from "./components/Homepage.tsx";
 import ShoppingPage from "./components/ShoppingPage.tsx";
 import Layout from "./components/Layout.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
+import { ShoppingCartProvider } from "./components/ShoppingCartContext.tsx";
+import ShoppingCartPage from "./components/ShoppingCartPage.tsx";
 
 const router = createBrowserRouter(
   [
@@ -16,6 +18,7 @@ const router = createBrowserRouter(
         { index: true, element: <Homepage /> },
         { path: "/shopping", element: <ShoppingPage /> },
         { path: "/shopping/:itemId", element: <ShoppingPage /> },
+        { path: "/cart", element: <ShoppingCartPage /> },
       ],
       errorElement: <ErrorPage />,
     },
@@ -25,6 +28,8 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ShoppingCartProvider>
+      <RouterProvider router={router} />
+    </ShoppingCartProvider>
   </StrictMode>
 );

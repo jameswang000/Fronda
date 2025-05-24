@@ -1,4 +1,4 @@
-interface ItemDisplayProps {
+interface PlantInfo {
   src: string;
   alt: string;
   name: string;
@@ -7,4 +7,4 @@ interface ItemDisplayProps {
   itemId: number;
 }
 
-export default ItemDisplayProps;
+export default PlantInfo;

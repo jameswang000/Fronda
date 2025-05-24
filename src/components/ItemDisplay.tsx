@@ -1,4 +1,4 @@
-import ItemDisplayProps from "./ItemDisplay";
+import PlantInfo from "./ItemDisplay";
 import { Link } from "react-router-dom";
 
 const ItemDisplay = ({
@@ -8,7 +8,7 @@ const ItemDisplay = ({
   description,
   price,
   itemId,
-}: ItemDisplayProps) => {
+}: PlantInfo) => {
   return (
     <div className="flex flex-col gap-3 border-2 border-frondaGold rounded-lg overflow-hidden p-3 bg-white/50">
       <img

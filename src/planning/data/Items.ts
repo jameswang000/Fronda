@@ -1,4 +1,4 @@
-import ItemDisplayProps from "../../components/ItemDisplay";
+import PlantInfo from "../../components/ItemDisplay";
 import CelestialWhisperImage from "../../images/Celestial-Whisper.png";
 import TranquilVeilImage from "../../images/Tranquil-Veil.png";
 import GreenCascadeImage from "../../images/Green-Cascade.png";
@@ -11,7 +11,7 @@ import ShadowVelvetImage from "../../images/Shadow-Velvet.png";
 import CoralVineImage from "../../images/Coral-Vine.png";
 import FrostleafPrayerImage from "../../images/Frostleaf-Prayer.png";
 
-const items: ItemDisplayProps[] = [
+const items: PlantInfo[] = [
   {
     src: CelestialWhisperImage,
     alt: "Celestial Whisper Plant",

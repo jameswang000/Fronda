@@ -2,13 +2,19 @@ import logo from "../images/Fronda-Logo-Light.png";
 import PersonIcon from "../svgs/PersonIcon";
 import ShoppingCartIcon from "../svgs/ShoppingCartIcon";
 import { Link } from "react-router-dom";
+import {
+  useShoppingCartItems,
+  getCartTotalItemCount,
+} from "./ShoppingCartContext";
 
 const NavBar = () => {
+  const shoppingCartItems = useShoppingCartItems();
+  const shoppingCartTotalItems = getCartTotalItemCount(shoppingCartItems);
   return (
     <div
       className="flex flex-row flex-wrap justify-between items-stretch text-3xl font-normal 
                  bg-frondaBiege gap-x-9 gap-y-2 pl-8 pr-14 border-b-1 border-b-frondaBorderGray/50
-                 w-full max-w-[2000px]"
+                 w-full max-w-[2000px] lg:sticky top-0 z-1 opacity-99 backdrop-blur-lg"
     >
       <Link to="/">
         <img
@@ -56,7 +62,19 @@ const NavBar = () => {
           to="/cart"
           className="flex flex-row items-center gap-3.5 px-2 whitespace-nowrap hover:bg-white/30 hover:scale-98 transition-all rounded-lg"
         >
-          <ShoppingCartIcon />
+          <div className="relative">
+            <div
+              className="text-[14px] flex flex-col justify-center items-center font-bold 
+                         min-w-[19px] min-h-[19px] p-1 aspect-square absolute 
+                         top-0 right-0 transform translate-x-1/2 -translate-y-1/5  
+                         bg-frondaGold rounded-full border-1 border-frondaOrange/50"
+            >
+              <p className="mt-[-5%] font-secondary">
+                {shoppingCartTotalItems}
+              </p>
+            </div>
+            <ShoppingCartIcon />
+          </div>
           <p>Cart</p>
         </Link>
       </div>

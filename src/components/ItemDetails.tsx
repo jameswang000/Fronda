@@ -1,8 +1,13 @@
 import items from "../planning/data/Items";
-import ItemDisplayProps from "./ItemDisplay";
+import PlantInfo from "./ItemDisplay";
+import {
+  ShoppingCartActions,
+  useShoppingCartDispatch,
+} from "./ShoppingCartContext";
 
 const ItemDetails = ({ itemId }: { itemId: number }) => {
-  const item: ItemDisplayProps = items[itemId];
+  const item: PlantInfo = items[itemId];
+  const dispatch = useShoppingCartDispatch();
   return (
     <div className="flex flex-row bg-frondaBiege w-full justify-center py-20 px-20 gap-5 max-w-[2000px]">
       <div className="w-1/3 overflow-auto">
@@ -23,6 +28,13 @@ const ItemDetails = ({ itemId }: { itemId: number }) => {
                          transition-transform transition-shadow duration-150
                          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-frondaDarkGreen
                          active:scale-95 active:translate-y-[1px] active:shadow-inner"
+            onClick={() => {
+              const action = {
+                type: ShoppingCartActions.ADD_ITEM,
+                payload: { itemId: itemId },
+              };
+              dispatch(action);
+            }}
           >
             Add to Cart
           </button>
