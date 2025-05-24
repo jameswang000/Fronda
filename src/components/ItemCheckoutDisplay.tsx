@@ -39,7 +39,7 @@ const ItemCheckoutDisplay = ({
           onClick={(e) => {
             e.preventDefault();
             dispatch({
-              type: ShoppingCartActions.DELETE_ITEM,
+              type: ShoppingCartActions.REMOVE_ITEM,
               payload: { itemId: itemId },
             });
           }}
@@ -53,7 +53,7 @@ const ItemCheckoutDisplay = ({
             onClick={(e) => {
               e.preventDefault();
               dispatch({
-                type: ShoppingCartActions.REMOVE_ITEM,
+                type: ShoppingCartActions.DECREASE_ITEM_QUANTITY,
                 payload: { itemId: itemId },
               });
             }}
@@ -69,7 +69,7 @@ const ItemCheckoutDisplay = ({
             onClick={(e) => {
               e.preventDefault();
               dispatch({
-                type: ShoppingCartActions.ADD_ITEM,
+                type: ShoppingCartActions.INCREASE_ITEM_QUANTITY,
                 payload: { itemId: itemId },
               });
             }}

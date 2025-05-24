@@ -11,11 +11,11 @@ const Hero = () => {
         className="bg-black/30 backdrop-blur-xs 
                       flex flex-col py-[20%] px-[10%]"
       >
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start font-primary">
           <h1 className="text-6xl text-left font-bold">
             Nature's Artistry, Cultivated for Your Home
           </h1>
-          <p className="text-3xl text-left font-medium mt-2.5 w-[48%]">
+          <p className="text-3xl text-left font-normal mt-2.5 w-[48%]">
             Fronda marries nature and art—each potted plant is a living
             masterpiece that transforms your space into a vibrant gallery of
             natural beauty.

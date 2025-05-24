@@ -30,7 +30,7 @@ const ItemDetails = ({ itemId }: { itemId: number }) => {
                          active:scale-95 active:translate-y-[1px] active:shadow-inner"
             onClick={() => {
               const action = {
-                type: ShoppingCartActions.ADD_ITEM,
+                type: ShoppingCartActions.INCREASE_ITEM_QUANTITY,
                 payload: { itemId: itemId },
               };
               dispatch(action);

@@ -18,9 +18,10 @@ interface ShoppingCartItem {
 }
 
 enum ShoppingCartActions {
-  ADD_ITEM,
+  INCREASE_ITEM_QUANTITY,
+  DECREASE_ITEM_QUANTITY,
   REMOVE_ITEM,
-  DELETE_ITEM,
+  RESET_CART,
 }
 
 type Action = {
@@ -51,7 +52,7 @@ const getCartTotalValue = (items: State) => {
 // 2. Your reducer (unchanged):
 const shoppingCartReducer: Reducer<State, Action> = (items, action) => {
   switch (action.type) {
-    case ShoppingCartActions.ADD_ITEM:
+    case ShoppingCartActions.INCREASE_ITEM_QUANTITY:
       if (items.find((item) => item.itemId === action.payload.itemId)) {
         return items.map((item) => {
           if (item.itemId === action.payload.itemId) {
@@ -68,7 +69,7 @@ const shoppingCartReducer: Reducer<State, Action> = (items, action) => {
         };
         return [...items, newItem];
       }
-    case ShoppingCartActions.REMOVE_ITEM:
+    case ShoppingCartActions.DECREASE_ITEM_QUANTITY:
       return items
         .map((item) => {
           if (item.itemId === action.payload.itemId) {
@@ -78,8 +79,10 @@ const shoppingCartReducer: Reducer<State, Action> = (items, action) => {
           }
         })
         .filter((item) => item.quantity > 0);
-    case ShoppingCartActions.DELETE_ITEM:
+    case ShoppingCartActions.REMOVE_ITEM:
       return items.filter((item) => item.itemId !== action.payload.itemId);
+    case ShoppingCartActions.RESET_CART:
+      return [];
     default:
       return items;
   }

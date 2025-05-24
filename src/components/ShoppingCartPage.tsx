@@ -1,12 +1,15 @@
 import ItemCheckoutDisplay from "./ItemCheckoutDisplay";
 import {
   useShoppingCartItems,
+  useShoppingCartDispatch,
   getCartTotalItemCount,
   getCartTotalValue,
+  ShoppingCartActions,
 } from "./ShoppingCartContext";
 
 const ShoppingCartPage = () => {
   const cartItems = useShoppingCartItems();
+  const dispatch = useShoppingCartDispatch();
   const cartTotalItemsCount = getCartTotalItemCount(cartItems);
   const cartTotalValue = getCartTotalValue(cartItems);
   const tax = cartTotalValue < 35 && cartTotalValue > 0 ? 5.99 : 0;
@@ -30,6 +33,13 @@ const ShoppingCartPage = () => {
         </div>
         <div className="flex flex-col w-2/5 border-1 border-frondaBorderGray/30 rounded-lg py-5 px-6 overflow-auto">
           <button
+            onClick={(e) => {
+              e.preventDefault();
+              dispatch({
+                type: ShoppingCartActions.RESET_CART,
+                payload: { itemId: -1 },
+              });
+            }}
             className="w-full bg-frondaGold rounded-3xl py-2.5 text-xl font-bold
                        hover:opacity-80 hover:cursor-pointer shadow-md
                        transition-all duration-150
