@@ -8,6 +8,8 @@ import Layout from "./components/Layout.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
 import { ShoppingCartProvider } from "./components/ShoppingCartContext.tsx";
 import ShoppingCartPage from "./components/ShoppingCartPage.tsx";
+import TextDisplay from "./components/TextDisplay.tsx";
+import privacyPolicyText from "./planning/text/fronda_privacy_policy.txt?raw";
 
 const router = createBrowserRouter(
   [
@@ -19,6 +21,10 @@ const router = createBrowserRouter(
         { path: "/shopping", element: <ShoppingPage /> },
         { path: "/shopping/:itemId", element: <ShoppingPage /> },
         { path: "/cart", element: <ShoppingCartPage /> },
+        {
+          path: "/documents/privacyPolicy",
+          element: <TextDisplay text={privacyPolicyText} />,
+        },
       ],
       errorElement: <ErrorPage />,
     },
