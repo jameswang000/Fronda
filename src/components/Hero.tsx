@@ -16,7 +16,7 @@ const Hero = () => {
             Nature's Artistry, Cultivated for Your Home
           </h1>
           <p className="text-3xl text-left font-normal mt-2.5 w-[48%]">
-            Fronda marries nature and art—each potted plant is a living
+            Fronda marries nature and art, each potted plant is a living
             masterpiece that transforms your space into a vibrant gallery of
             natural beauty.
           </p>
